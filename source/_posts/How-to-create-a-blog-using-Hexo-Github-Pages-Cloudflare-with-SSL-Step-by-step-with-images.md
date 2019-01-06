@@ -4,9 +4,9 @@ title: >-
   step with images
 date: 2019-01-05 19:10:34
 tags:
-- xexo
-- blog
+- hexo
 - github 
+- cloudflare
 ---
 ## **We need:**
 - A godaddy.com account with a domain
