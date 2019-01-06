@@ -2,6 +2,9 @@
 title: 'Crear blog usando Hexo, Github Pages, Cloudflare con SSL'
 date: 2019-01-05 17:19:04
 tags:
+- hexo
+- github 
+- cloudflare
 ---
 ## **Para esto necesitamos:**
 - Una cuenta en godaddy.com con un dominio
@@ -57,7 +60,7 @@ Agregar nombre al nuevo repositorio y hacer click en "Create repository"
 ![](/images/20190105/3-2.PNG)
 ![](/images/20190105/3-3.PNG)
 
-### 4. Verificar disponibilidad de certificado de seguridada (SSL)
+### 4. Verificar disponibilidad de certificado de seguridad (SSL)
 Para este punto nuestro dominio ya está siendo administrado por cloudflare por lo que contamos con un certificado SSL.
 Ingresar a cloudflare.com
 Click en nuestrio sitio creado en el paso 1
@@ -96,9 +99,9 @@ https://www.poweredbyjeff.com/2018/05/14/Deploying-Hexo-website-to-Github-Pages/
 ### 6. Configurar hexo para subir a Github
 #### Editar archivo _config.yml
 Editar URL
-url: https://randomtechguy.com #nuestro dominio con https
+    url: https://randomtechguy.com #nuestro dominio con https
 Editar public dir from public to docs
-public_dir: docs
+    public_dir: docs
 Comentar configuracion de Deploy
     #deploy:
     #   type:
