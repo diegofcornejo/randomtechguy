@@ -62,6 +62,10 @@
         })();
     </script>
 <% } %>
+<!-- Umami Analytics -->
+<% if (theme.umami_analytics.enabled && theme.umami_analytics.id){ %>
+  <script async defer data-website-id="<%= theme.umami_analytics.id %>" src="<%= theme.umami_analytics.host %>/umami.js"></script>
+<% } %>
 <!-- Disqus Comments -->
 <% if (theme.disqus.enabled && theme.disqus.shortname){ %>
     <script type="text/javascript">
