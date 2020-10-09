@@ -1,32 +1,24 @@
 <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
-      </h1>
-      <% if (theme.subtitle){ %>
-        <h2 id="subtitle-wrap">
-          <a href="<%- url_for() %>" id="subtitle"><%= theme.subtitle %></a>
-        </h2>
+  <a href="<%- url_for("/") %>">
+  <% if (theme.logo && theme.logo.enabled) { %>
+    <% if (theme.gravatar.email && theme.logo.gravatar) { %>
+      <div id="logo" style="background-image: url(<%- gravatar(theme.gravatar.email) %>);"></div>
+    <% } else { %>
+      <div id="logo" style="background-image: url(<%- url_for(theme.logo.url) %>);"></div>
+    <% } %>
+  <% } %>
+    <div id="title">
+      <h1><%= config.title %></h1>
+    </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      <% for (var i in theme.nav) { %> 
+        <li><a href="<%- url_for(theme.nav[i]) %>"><%= __('nav.'+i).replace("nav.", "") %></a></li>
       <% } %>
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        <% for (var i in theme.menu){ %>
-          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
-        <% } %>
-      </nav>
-      <nav id="sub-nav">
-        <% if (theme.rss){ %>
-          <a id="nav-rss-link" class="nav-icon" href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>"></a>
-        <% } %>
-        <a id="nav-search-btn" class="nav-icon" title="<%= __('search') %>"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <%- search_form({button: '&#xF002;'}) %>
-      </div>
-    </div>
+    </ul>
   </div>
 </header>

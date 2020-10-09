@@ -1,20 +1,38 @@
+nav:
+  home: Home
+  about: Over mij
+  articles: Blog
+  projects: Projecten
+  search: Zoeken
 
-categories: Categorieën
-search: Zoeken
-tags: Labels
-tagcloud: Tag Cloud
-tweets: Tweets
-prev: Vorige
-next: Volgende
-comment: Commentaren
-archive_a: Archieven
-archive_b: "Archieven: %s"
-page: Pagina %d
-recent_posts: Recente berichten
-newer: Nieuwer
-older: Ouder
-share: Delen
-powered_by: Powered by
-rss_feed: RSS Feed
-category: Categorie
-tag: Label
+footer:
+  copyright: Copyright
+
+index:
+  find_me_on: Je vindt me op
+  enum_comma: ','
+  enum_and: en
+  articles: Blogposts
+  projects: Projecten
+
+post:
+  desktop:
+    previous: Vorige post
+    next: Volgende post
+    back_to_top: Naar boven
+    share: Deel deze post
+  mobile:
+    menu: Menu
+    toc: Inhoudsopgave
+    back_to_top: Top
+    share: Deel
+
+search:
+  search: zoeken...
+  no_results: Geen resultaten gevonden.
+
+pagination:
+  page: Pagina %d van %d
+
+comments:
+  no_js: Activeer Javascript om de commentaarsectie te kunnen bekijken.

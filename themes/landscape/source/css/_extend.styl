@@ -1,63 +1,111 @@
-$block-caption
-  text-decoration: none
-  text-transform: uppercase
-  letter-spacing: 2px
-  color: color-grey
-  margin-bottom: 1em
-  margin-left: 5px
-  line-height: 1em
-  text-shadow: 0 1px #fff
-  font-weight: bold
-
-$block
-  background: #fff
-  box-shadow: 1px 2px 3px #ddd
-  border: 1px solid color-border
-  border-radius: 3px
-
 $base-style
-  h1
-    font-size: 2em
-  h2
+  h1, .h1
+    display: block
+    margin-top: 3rem
+    margin-bottom: 1rem
+    color: $color-accent-1
+    letter-spacing: .01em
+    font-weight: 700
+    font-style: normal
     font-size: 1.5em
+
+    antialias()
+
+  h2, .h2
+    position: relative
+    display: block
+    margin-top: 2rem
+    margin-bottom: .5rem
+    color: $color-accent-2
+    text-transform: none
+    letter-spacing: normal
+    font-weight: bold
+    font-size: 1rem
+
   h3
-    font-size: 1.3em
+    color: $color-accent-2
+    text-decoration: underline
+    font-weight: bold
+    font-size: .9rem
+
   h4
-    font-size: 1.2em
   h5
-    font-size: 1em
   h6
-    font-size: 1em
-    color: color-grey
+    display: inline
+    border-bottom: 1px dashed $color-accent-3
+    color: $color-accent-3
+    text-decoration: none
+    font-weight: normal
+    font-size: .9rem
+
+  h3
+  h4
+  h5
+  h6
+    margin-top: .9rem
+    margin-bottom: .5rem
+
   hr
-    border: 1px dashed color-border
+    border: 1px dashed $color-accent-3
+
   strong
     font-weight: bold
-  em, cite
+
+  em
+  cite
     font-style: italic
-  sup, sub
-    font-size: 0.75em
-    line-height: 0
+
+  sup
+  sub
     position: relative
     vertical-align: baseline
+    font-size: .75em
+    line-height: 0
+
   sup
-    top: -0.5em
+    top: -.5em
+
   sub
-    bottom: -0.2em
+    bottom: -.2em
+
   small
-    font-size: 0.85em
-  acronym, abbr
+    font-size: .85em
+
+  acronym
+  abbr
     border-bottom: 1px dotted
-  ul, ol, dl
-    margin: 0 20px
-    line-height: line-height
-  ul, ol
-    ul, ol
+
+  ul
+  ol
+  dl
+    line-height: $line-height
+
+  ul
+  ol
+    ul
+    ol
       margin-top: 0
       margin-bottom: 0
-  ul
-    list-style: disc
+
   ol
     list-style: decimal
+
   dt
     font-weight: bold
+
+  table
+    width: 100%
+    border-collapse: collapse
+    text-align: left
+    font-size: $font-size - 2px
+
+  th
+    padding: 8px
+    border-bottom: 1px dashed $color-code-border
+    color: $color-accent-2
+    font-weight: bold
+    font-size: $font-size - 1px
+
+  td
+    padding: 9px 8px 0
+    border-bottom: none
