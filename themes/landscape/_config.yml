@@ -133,7 +133,7 @@ baidu_analytics:
 # Fill in your Umami Analytics tracking ID to enable Umami Analytics.
 umami_analytics:
   enabled: true
-  id: e77e68be-f6e3-4bc3-9365-2b76b57cd571
+  id: 55c44768-891f-4710-9f44-f0aad872fc30
   host: https://analytics.pentcloud.com
 
 # Fill in you Gravatar user id / email if you want to use your gravatar as the
