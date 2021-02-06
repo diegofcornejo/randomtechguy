@@ -63,8 +63,12 @@
     </script>
 <% } %>
 <!-- Umami Analytics -->
-<% if (theme.umami_analytics.enabled && theme.umami_analytics.id){ %>
+<% if (theme.umami_analytics.enabled && theme.umami_analytics.id && theme.umami_analytics.host){ %>
   <script async defer data-website-id="<%= theme.umami_analytics.id %>" src="<%= theme.umami_analytics.host %>/umami.js"></script>
+<% } %>
+<!-- Ackee Analytics -->
+<% if (theme.ackee_analytics.enabled && theme.ackee_analytics.id && theme.ackee_analytics.host){ %>
+  <script async src="<%= theme.ackee_analytics.host %>/tracker.js" data-ackee-server="src="<%= theme.ackee_analytics.host %>" data-ackee-domain-id="src="<%= theme.ackee_analytics.id %>"></script>
 <% } %>
 <!-- Disqus Comments -->
 <% if (theme.disqus.enabled && theme.disqus.shortname){ %>
