@@ -135,6 +135,12 @@ umami_analytics:
   enabled: true
   id: 7c940ae8-5adc-4687-b885-4c9e08e4837c
   host: https://umami-pentcloud.vercel.app
+  
+ # Fill in your Ackee Analytics tracking ID to enable Ackee Analytics.
+ackee_analytics:
+  enabled: true
+  id: 221e0673-09ff-419d-a576-61fa9f38ddc0
+  host: https://ackee-pentcloud.vercel.app 
 
 # Fill in you Gravatar user id / email if you want to use your gravatar as the
 # logo and/or favicons of you website.
